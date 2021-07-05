@@ -31,4 +31,6 @@ https://github.com/docops-hq/learnapidoc-ru/blob/master/Publishing-doc/Pull-requ
 
 https://htmlacademy.ru/blog/education/what/version-control-system
 
+https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches
+
 
