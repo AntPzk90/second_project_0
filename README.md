@@ -1,4 +1,6 @@
-# second_project_0
+# Инструкция
+
+
 1. Сделать форк(fork) проекта из репозитория Webnauts Academy (дальше - Академия). Ссылка на Ваш репозиторий вышлется Вам лично проверяющим.
 
 2. Клонировать свой форк на ПК
@@ -30,5 +32,7 @@ https://github.com/docops-hq/learnapidoc-ru/blob/master/Publishing-doc/Use-GitHu
 https://github.com/docops-hq/learnapidoc-ru/blob/master/Publishing-doc/Pull-request-workflows.md
 
 https://htmlacademy.ru/blog/education/what/version-control-system
+
+https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches
 
 
