@@ -1,7 +1,7 @@
 //Подключаем галп
 const gulp = require("gulp");
-var imagemin = require("gulp-imagemin");
-var plumber = require("gulp-plumber");
+const imagemin = require("gulp-imagemin");
+const plumber = require("gulp-plumber");
 const less = require("gulp-less");
 const browserSync = require("browser-sync").create();
 
@@ -37,6 +37,7 @@ gulp.task("watch", () => {
   gulp.watch("./source/less/**/*.less", gulp.series("css"));
   gulp.watch("./source/img/**", gulp.series("imagemin"));
   gulp.watch("./source/*.html", gulp.series("html"));
+  gulp.watch("./source/less/**/*.less").on("change", browserSync.reload);
   gulp.watch("./source/*.html").on("change", browserSync.reload);
 });
 

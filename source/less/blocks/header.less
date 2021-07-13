@@ -2,6 +2,59 @@
     color: #fff;
 
     &__switch {
-        color: tomato;
+        .btn-res;
+        background-color: tomato;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+}
+
+.header__wrapper {
+    .container;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.header__logo {
+    margin-right: 36px;
+
+    @media screen and (max-width: @medium) {
+        margin-right: 0;
+    }
+}
+
+.header__switch {
+    margin-right: 158px;
+
+    @media screen and (max-width: @medium) {
+        margin-right: 0;
+    }
+}
+
+.header__mobile-btn {
+    .btn-res;
+    display: none;
+}
+
+.header__btn {
+    margin-left: auto;
+
+    @media screen and (max-width: @medium) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: @medium) {
+    .header__wrapper {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .header__mobile-btn {
+        display: block;
     }
 }
