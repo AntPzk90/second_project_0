@@ -12,5 +12,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gulp-rename": "^2.0.0",
+    "gulp-svgstore": "^8.0.0",
+    "svgstore": "^3.0.0-2"
+  }
 }

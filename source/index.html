@@ -14,7 +14,11 @@
 			<a href="#" class="header__logo logo">
 				<img src="./img/logo.png" height="19" width="46" class="logo__img" />
 			</a>
-			<button class="header__switch"></button>
+			<button class="header__switch">
+				<svg class="header__switch-icon" width="24" height="24">
+					<use xlink:href="./img/sprite.svg#sunny"></use>
+				</svg>
+			</button>
 			<button class="header__mobile-btn">
 				<img src="./img/burder.png" height="20" width="20">
 			</button>
@@ -49,7 +53,10 @@
 					<span class="main-title__colored"> Консалтинг </span>
 				</div>
 				<div class="start-screen__img-wrap">
-					<img src="./img/start-screen-img.jpg" height="569" width="608" alt="picture" />
+					<picture>
+						<source srcset="./img/start-screen@2x.png 2x"/>
+						<img src="./img/start-screen.png"  height="569" width="608" alt="picture" />
+					</picture>
 				</div>
 				<div class="start-screen__dscr">
 					Консультирую по вопросам

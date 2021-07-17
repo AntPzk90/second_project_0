@@ -4,6 +4,8 @@ const imagemin = require("gulp-imagemin");
 const plumber = require("gulp-plumber");
 const less = require("gulp-less");
 const browserSync = require("browser-sync").create();
+var svgstore = require("gulp-svgstore");
+var rename = require("gulp-rename");
 
 gulp.task("html", () => {
   return gulp.src("source/*.html").pipe(gulp.dest("./build"));
@@ -53,3 +55,13 @@ gulp.task(
 //     .pipe(sass())
 //     .pipe(gulp.dest("build/css"));
 // });
+
+gulp.task("sprite", function () {
+  return gulp.src("source/img/icons/*.svg")
+    .pipe(imagemin([imagemin.svgo()]))
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+});
