@@ -8,65 +8,75 @@
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 2;
     }
 
-   &__list {
-    .list-reset;
-   } 
+    &__list {
+        .list-reset;
+    }
 
-   &__item {
-       padding-top: 6px;
-       padding-bottom: 9px;
-       padding-left: 16px;
-       padding-right: 16px;
-
-       @media screen and (max-width: @medium) {
-           margin-bottom: 56px;
-           text-align: center;
-       }
-
-       &--btn {
-           display: none;
-
-           @media screen and (max-width: @medium) {
-               display: block;
-           }
-       }
-
-       &--active {
-        border-radius: 20px;
-        border: 1px solid #83C1FA;
+    &__item {
+        padding-top: 6px;
+        padding-bottom: 9px;
+        padding-left: 16px;
+        padding-right: 16px;
 
         @media screen and (max-width: @medium) {
-            border-radius: 0;
-            border: none;
+            margin-bottom: 56px;
+            text-align: center;
         }
+
+        &--btn {
+            display: none;
+
+            @media screen and (max-width: @medium) {
+                display: block;
+            }
         }
-   }
 
-   &__link {
-    // font-family: SF Pro Display;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: @white;
-    text-align: center;
-    text-decoration: none;
-   }
+        &--active {
+            border-radius: 20px;
+            background-image: url(../img/icons/ellipse.svg);
 
-   &__close {
-       display: none;
+            @media screen and (max-width: @medium) {
+                background-image: none;
+            }
+        }
+    }
 
-       @media screen and (max-width: @medium) {
-           .btn-res;
-           display: block;
-           position: absolute;
-           top: 24px;
-           right: 15px;
-           
-       }
-   }
+    &__link {
+        font-family: @proDisplayM;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: @white;
+        text-align: center;
+        text-decoration: none;
+
+        @media screen and (max-width: @medium) {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+
+        }
+    }
+
+    &__close {
+        display: none;
+
+        @media screen and (max-width: @medium) {
+            .btn-res;
+            display: block;
+            position: absolute;
+            top: 24px;
+            right: 15px;
+
+        }
+    }
 }

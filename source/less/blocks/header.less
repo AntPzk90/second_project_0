@@ -1,4 +1,4 @@
-.header{
+.header {
     color: #fff;
 
     &__switch {
@@ -6,6 +6,12 @@
         width: 20px;
         height: 20px;
         display: block;
+    }
+
+    &--close {
+        .header__navigation {
+            display: none
+        }
     }
 }
 
@@ -27,6 +33,7 @@
 
 .header__switch {
     margin-right: 158px;
+    background-image: url(../img/icons/sunny.svg);
 
     @media screen and (max-width: @medium) {
         margin-right: 0;

@@ -1,0 +1,81 @@
+.start-screen__wrapper {
+    .container();
+    position: relative;
+    padding-top: 106px;
+    padding-bottom: 220px;
+    border-bottom: 1px solid @white;
+
+    @media screen and (max-width: @medium) {
+        padding-top: 40px;
+        padding-bottom: 110px;
+    }
+}
+
+.start-screen__title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 68px;
+}
+
+.start-screen__img-wrap {
+    position: absolute;
+    top: 106px;
+    right: 0;
+    width: 608px;
+    height: 509px;
+    z-index: 0;
+
+    @media screen and (max-width: @medium) {
+        top: 40px;
+        width: 178px;
+        height: 166px;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: @blue;
+        transform: translate(5px; 5px);
+    }
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+.start-screen__dscr {
+    position: relative;
+    width: 100%;
+    max-width: 485px;
+    text-align: right;
+    font-family: @proDisplayM;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: @white;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 0;
+        display: block;
+        width: 48%;
+        height: 1px;
+        background-color: #4F4F4F;
+    }
+
+    @media screen and (max-width: @medium) {
+        padding-left: 54%;
+        text-align: left;
+    }
+}
